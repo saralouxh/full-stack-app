@@ -16,4 +16,3 @@ class UserBlueprint < Blueprinter::Base
   end
 
 end
-

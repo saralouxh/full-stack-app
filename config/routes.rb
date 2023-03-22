@@ -22,11 +22,13 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       namespace :users do
+        post :create
         post :login
         delete :logout
         get :me
-        post :create
       end
+      resources :recipes
     end
   end
+
 end
